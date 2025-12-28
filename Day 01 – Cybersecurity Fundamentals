@@ -1,0 +1,27 @@
+## Day 1 – Cybersecurity Fundamentals & Ethical Hacking
+
+### Overview
+Cybersecurity begins with understanding how systems work, not breaking them blindly. Ethical hackers rely on strong fundamentals before using any tools or exploits.
+
+### Key Concepts Covered
+- Difference between ethical hacking and illegal hacking
+- What bug bounty programs really are
+- Penetration testing vs random attacks
+- Client-server architecture
+- How data packets travel across networks
+- Role of servers in modern applications
+
+### Why This Matters
+Without networking and system fundamentals:
+- Vulnerability testing becomes guesswork
+- Tools produce results you don’t understand
+- Reports lack accuracy and credibility
+
+### Practical Insight
+When accessing a website:
+1. Your browser sends an HTTP request
+2. The request reaches a web server
+3. The server processes it and responds
+4. Security flaws often exist in this flow
+
+Understanding this process is essential before learning any attack technique.
