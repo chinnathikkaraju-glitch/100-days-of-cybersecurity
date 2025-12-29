@@ -1,0 +1,22 @@
+## Day 2 – IP Addresses, DNS, Ports & Protocols
+
+### Overview
+Networking fundamentals are critical in cybersecurity. Every investigation, scan, or alert starts with understanding how systems communicate over the internet.
+
+### Key Concepts
+- IPv4 vs IPv6 addressing
+- Public IP vs Private IP ranges
+- Domain names and DNS resolution
+- Common ports (80, 443, 22, 21)
+- Protocols like HTTP, HTTPS, FTP, SSH
+
+### Why This Matters
+- IP addresses help trace attackers and suspicious activity
+- DNS records reveal malicious domains and infrastructure
+- Open or unusual ports may indicate misconfigurations or malware
+
+### Practical Example
+Check your system’s IP address:
+```bash
+ip a        # Linux
+ipconfig   # Windows
