@@ -1,0 +1,22 @@
+## Day 3 – WHOIS Lookup & OSINT Basics
+
+### Overview
+OSINT (Open-Source Intelligence) involves collecting publicly available information to support cybersecurity investigations. WHOIS is often the first step when analyzing domains.
+
+### Key Concepts
+- What WHOIS is and why it matters
+- Domain registrar and hosting details
+- Registration and expiry dates
+- Name servers and infrastructure clues
+- OSINT as a legal investigation method
+
+### Why This Matters
+- Helps identify phishing and scam websites
+- Links multiple malicious domains together
+- Preserves evidence even if a website is taken down
+- Supports incident response and fraud investigations
+
+### Practical Example
+Perform a WHOIS lookup:
+```bash
+whois example.com
