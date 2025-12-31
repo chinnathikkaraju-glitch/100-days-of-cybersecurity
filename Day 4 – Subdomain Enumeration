@@ -1,0 +1,20 @@
+## Day 4 – Subdomain Enumeration
+
+### Overview
+Subdomain enumeration is the process of discovering subdomains associated with a main domain. These subdomains often expose hidden services and increase the attack surface.
+
+### Key Concepts
+- What subdomains are and why they exist
+- Forgotten admin, test, and staging environments
+- Attack surface expansion through subdomains
+- Importance of reconnaissance before exploitation
+
+### Why This Matters
+- Hidden subdomains often lack security updates
+- They may expose admin panels or APIs
+- Many real-world breaches start from weak subdomains
+
+### Practical Example
+Using a basic enumeration tool:
+```bash
+sublist3r -d example.com
