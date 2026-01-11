@@ -1,0 +1,24 @@
+## Day 13 – DVWA (Damn Vulnerable Web Application)
+
+On Day 13, I practiced on **DVWA**, a deliberately vulnerable web application
+designed to teach web security concepts.
+
+### Step-by-Step Learnings:
+
+1. **Understanding DVWA**
+   - A legal and safe platform for learning vulnerabilities
+   - Used by beginners and professionals
+
+2. **Common Vulnerabilities Practiced**
+   - SQL Injection
+   - Cross-Site Scripting (XSS)
+   - Weak authentication
+   - Poor input validation
+
+3. **Why Vulnerabilities Exist**
+   - Lack of secure coding practices
+   - No proper validation or sanitization
+
+### Key Takeaway:
+Most security issues arise from **poor coding**, not complex attacks.
+Learning them in a controlled environment improves secure development skills.
