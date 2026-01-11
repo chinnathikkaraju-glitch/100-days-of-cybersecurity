@@ -1,0 +1,28 @@
+## Day 11 – Virtualization, Dual Boot & Live Boot
+
+On Day 11, I explored different system setups used in cybersecurity
+to safely analyze malware and test exploits.
+
+### Step-by-Step Learnings:
+
+1. **Virtualization**
+   - Run multiple operating systems on one machine
+   - Used for malware analysis and exploit testing
+
+2. **Dual Boot**
+   - Two operating systems on a single system
+   - Commonly used for Windows + Kali Linux
+
+3. **Live Boot**
+   - Boot OS directly from USB/DVD
+   - Ideal for forensic investigations
+   - No changes to the main system
+
+### Why These Matter:
+- Prevent damage to primary systems
+- Create isolated testing environments
+- Improve investigation safety
+
+### Key Takeaway:
+Cybersecurity testing should always be done in
+**controlled and isolated environments**.
