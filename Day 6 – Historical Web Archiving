@@ -1,0 +1,119 @@
+# 🔐 Wayback Machine: Recovering Deleted Website Evidence
+
+## Overview
+
+During Day 6 of my security journey, I discovered that a scammer who deleted their website left behind recoverable evidence. Using the Wayback Machine (Internet Archive), I retrieved historical snapshots that served as digital evidence.
+
+## The Problem
+
+Fraudsters and malicious actors often delete their websites after:
+- Scamming victims out of money
+- Spreading misinformation
+- Running phishing campaigns
+- Violating laws or regulations
+
+They believe deleting = erasing evidence. **They're wrong.**
+
+## Wayback Machine Methodology
+
+### Step 1: Access the Wayback Machine
+
+```bash
+# Navigate to the Internet Archive
+https://web.archive.org
+
+# Or use the command line
+curl "https://archive.org/wayback/available?url=example.com"
+```
+
+### Step 2: Search for Archived Snapshots
+
+```bash
+# Using waybackpy (Python library)
+pip install waybackpy
+
+# Python script to get snapshots
+from waybackpy import WaybackMachineCDXServerAPI
+url = "deleted-scam-site.com"
+cdx = WaybackMachineCDXServerAPI(url)
+for snapshot in cdx.snapshots():
+    print(snapshot.archive_url)
+```
+
+### Step 3: Retrieve Historical Content
+
+```bash
+# Download entire archived site
+wget --mirror --convert-links \
+  "https://web.archive.org/web/20230101/http://scam-site.com"
+
+# Using wayback-machine-downloader
+gem install wayback_machine_downloader
+wayback_machine_downloader http://scam-site.com
+```
+
+### Step 4: Document & Preserve Evidence
+
+```bash
+# Take screenshots with timestamps
+screenshot-tool --full-page --timestamp \
+  "https://web.archive.org/web/20230101/http://scam-site.com"
+
+# Generate PDF evidence
+wkhtmltopdf "archive_url" evidence.pdf
+
+# Hash files for integrity
+sha256sum evidence.pdf > evidence.sha256
+```
+
+## Useful Tools
+
+| Tool | Purpose |
+|------|---------|
+| Wayback Machine | Primary web archive |
+| waybackpy | Python API for archives |
+| Archive.today | Alternative archive service |
+| CachedView | Google cache retrieval |
+| Webrecorder | Create your own archives |
+
+## Real-World Investigation Example
+
+1. **Case**: "guaranteed-profits.com" scam site
+2. **Action**: Scammer deletes website after fraud
+3. **Recovery**: 47 historical snapshots found
+4. **Evidence**: Fake testimonials, impossible promises, payment pages
+5. **Result**: Evidence preserved with timestamps for legal proceedings
+
+## What Can Be Recovered
+
+- ✓ HTML pages and content
+- ✓ Images and media files
+- ✓ JavaScript and CSS
+- ✓ Downloadable documents
+- ✓ Contact information
+- ✓ Terms and conditions (often incriminating)
+
+## Legitimate Use Cases
+
+1. **Fraud Investigation** - Recover evidence from deleted scam sites
+2. **Legal Proceedings** - Provide timestamped website evidence
+3. **Journalism** - Research past statements and claims
+4. **Website Recovery** - Restore accidentally deleted content
+5. **Historical Research** - Study website evolution over time
+
+## Key Takeaway
+
+> The internet NEVER forgets. Deleting a website does not erase its history. Archives preserve digital evidence indefinitely.
+
+## Prevention (For Legitimate Sites)
+
+If you want to prevent archiving:
+```txt
+# robots.txt
+User-agent: ia_archiver
+Disallow: /
+```
+
+---
+
+*This technique is for legitimate investigations, journalism, and authorized security assessments only.*
