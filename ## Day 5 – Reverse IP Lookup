@@ -1,0 +1,100 @@
+# 🔐 Reverse IP Lookup: Shared Hosting Security Assessment
+
+## Overview
+
+During Day 5 of my security assessment journey, I discovered that even if a website appears secure, the server behind it may harbor vulnerabilities through co-hosted websites.
+
+## The Problem
+
+Shared hosting environments create a dangerous scenario:
+- Multiple websites on a single IP address
+- One vulnerable site can compromise the entire server
+- Attackers can pivot from weak sites to high-value targets
+- Limited isolation between hosted applications
+
+## Reverse IP Lookup Methodology
+
+### Step 1: Identify Target IP Address
+
+```bash
+# Get IP address of target
+ping target.com
+
+# Using nslookup
+nslookup target.com
+
+# Using dig
+dig +short target.com
+```
+
+### Step 2: Perform Reverse IP Lookup
+
+```bash
+# Using Shodan CLI
+shodan host 192.168.1.1
+
+# Using theHarvester
+theHarvester -d target.com -b all
+
+# Web-based tools
+# - viewdns.info/reverseip
+# - bing.com (ip:192.168.1.1)
+# - securitytrails.com
+```
+
+### Step 3: Analyze Co-hosted Websites
+
+```bash
+# Check technologies on discovered sites
+whatweb -i domains.txt
+
+# Screenshot all domains
+gowitness file -f domains.txt
+
+# Check for common vulnerabilities
+nuclei -l domains.txt -t cves/
+```
+
+### Step 4: Identify Weak Links
+
+```bash
+# Scan for outdated CMS
+wpscan --url http://weaksite.com
+
+# Check for exposed admin panels
+gobuster dir -u http://weaksite.com -w admin-panels.txt
+```
+
+## Useful Tools
+
+| Tool | Purpose |
+|------|---------|
+| ViewDNS | Web-based reverse IP |
+| Shodan | IP intelligence |
+| Bing (ip:) | Search engine lookup |
+| SecurityTrails | Domain intelligence |
+| Censys | Internet-wide scanning |
+
+## Real-World Attack Scenario
+
+1. Target: secure-bank.com (well-protected)
+2. Reverse IP reveals: old-blog.com on same server
+3. old-blog.com runs WordPress 4.0 (vulnerable)
+4. Attacker exploits old-blog.com
+5. Gains server access → Pivots to secure-bank.com
+
+## Prevention Measures
+
+1. **Use VPS or Dedicated Hosting** - Isolate critical applications
+2. **Implement Container Isolation** - Docker/Kubernetes separation
+3. **Regular Audits** - Monitor all co-hosted sites
+4. **Keep Everything Updated** - CMS, plugins, server software
+5. **Know Your Neighbors** - Research who shares your server
+
+## Key Takeaway
+
+> Shared hosting means shared risk. Your security is only as strong as your weakest co-hosted neighbor.
+
+---
+
+*This is for educational purposes in authorized security assessments only.*
