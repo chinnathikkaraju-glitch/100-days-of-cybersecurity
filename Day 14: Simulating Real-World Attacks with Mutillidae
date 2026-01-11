@@ -1,0 +1,16 @@
+  # Day 14: Simulating Real-World Attacks with Mutillidae
+
+Today's lab focused on **Mutillidae**, a top-tier project for practicing the **OWASP Top 10**. Unlike more simplified labs, Mutillidae mimics the complexity of real-world web applications.
+
+### 🛠️ Attacks Practiced:
+1. **Reflected & Stored XSS:** Understanding how malicious scripts can be executed in a user's browser via unsanitized input.
+2. **SQL Injection (SQLi):** Exploiting the database layer to bypass authentication and extract sensitive information.
+3. **Local File Inclusion (LFI):** Tricking the web server into exposing sensitive system files (like `/etc/passwd`).
+
+### 📝 Strategic Notes on Mitigation:
+- **Input Validation:** Never trust user input. Use allow-lists instead of block-lists.
+- **Parameterized Queries:** The primary defense against SQLi—separating code from data.
+- **Output Encoding:** Crucial for stopping XSS by converting special characters into a safe format before rendering them in the browser.
+
+### 📂 Repository Update
+I have added my notes on the specific payloads used and the corresponding mitigation strategies.
