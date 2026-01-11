@@ -1,0 +1,55 @@
+## Day 10 – Proxies & VPNs
+
+On Day 10, I learned about **Proxies and VPNs** and their importance in cybersecurity.
+
+### Step-by-Step Learnings:
+
+1. **Proxy**
+   - Acts as an intermediary between user and internet
+   - Hides the real IP address
+
+2. **VPN (Virtual Private Network)**
+   - Encrypts internet traffic
+   - Protects identity and data
+
+3. **Used by Attackers**
+   - To hide location and identity
+   - To bypass monitoring
+
+4. **Used by Investigators**
+   - To maintain privacy
+   - To safely conduct investigations
+
+### Key Takeaway:
+The same technology can be used for **attack or defense**.
+Understanding both perspectives is essential in cybersecurity.
+
+Today's focus was on **Proxies** and **Virtual Private Networks (VPNs)**. While both mask the origin IP address, they operate differently within the OSI Model.
+
+## ⚙️ Technical Comparison
+
+| Feature | Proxy Server | VPN (Virtual Private Network) |
+| :--- | :--- | :--- |
+| **Operating Layer** | Application Layer (Layer 7) | Network Layer (Layer 3) |
+| **Encryption** | Usually None (SOCKS/HTTP) | Strong Encryption (AES-256) |
+| **Scope** | App-specific (e.g., just the browser) | System-wide (all traffic) |
+| **Privacy** | Hides IP from the destination | Hides IP + data from ISP & destination |
+
+
+
+## 🛠️ Tactical Perspectives
+
+### 5. The Attacker's Intent (Evasion)
+Attackers use **Proxy Chains** (routing traffic through multiple proxies in different jurisdictions) to:
+- Bypass Geo-fencing/Firewalls.
+- Perform credential stuffing without getting their main IP blacklisted.
+- Obfuscate the "Source of Attack" during a live intrusion.
+
+### 6. The Investigator's Intent (Protection)
+Security researchers and OSINT (Open Source Intelligence) investigators use VPNs to:
+- **Protect the Lab:** Prevent malware from identifying the researcher's home/office network.
+- **Maintain Neutrality:** Ensure that search results aren't biased by their actual location.
+- **Encryption:** Secure data when performing investigations over untrusted public networks.
+
+## 📝 Key Takeaway
+A proxy is like a **fake ID**; it changes who people think you are. A VPN is like an **armored car with tinted windows**; it changes who people think you are AND protects what's inside.
