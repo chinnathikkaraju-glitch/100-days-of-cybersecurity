@@ -1,0 +1,26 @@
+## Day 15 – OWASP Juice Shop
+
+On Day 15, I practiced on **OWASP Juice Shop**, a deliberately vulnerable
+modern web application that demonstrates real-world security failures.
+
+### Step-by-Step Learnings:
+
+1. **Logic Flaws**
+   - Abuse of application workflows
+   - Security issues caused by flawed business logic
+
+2. **Insecure Authentication**
+   - Weak login mechanisms
+   - Broken access control and session handling
+
+3. **Improper Validation**
+   - Trusting user-controlled input
+   - Missing or weak server-side validation
+
+### Why This Matters:
+- Many vulnerabilities cannot be detected by scanners alone
+- Secure design and logic are critical for modern applications
+
+### Key Takeaway:
+Understanding application behavior is essential for identifying
+security weaknesses in real-world systems.
