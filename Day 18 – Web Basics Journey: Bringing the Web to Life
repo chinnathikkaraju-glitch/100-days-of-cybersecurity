@@ -1,0 +1,89 @@
+Day 18 – Web Basics Journey: Bringing the Web to Life
+
+In the early days, websites were silent — just text on a screen.
+Today’s web is interactive, engaging, and alive.
+
+This transformation happened because of multimedia.
+
+HTML’s <audio> and <video> tags allow developers to embed sound and visuals directly into web pages, without relying on external plugins or third-party players.
+
+ Why Multimedia Matters on the Web :
+
+Humans connect better with sound and visuals than plain text.
+
+Audio and video help websites to:
+
+Explain complex ideas more easily
+
+Improve user engagement
+
+Support different learning styles
+
+Feel modern and professional
+
+Multimedia turns static pages into interactive experiences.
+
+The <audio> Tag – The Invisible Player :
+
+The <audio> tag is unique because it is invisible by default.
+You must explicitly tell the browser to show playback controls.
+
+Key Attributes :
+
+controls :
+Displays play/pause and volume controls.
+Without it, audio may play silently in the background.
+
+loop :
+Repeats the audio continuously.
+Ideal for background ambiance or meditation sites.
+
+preload :
+Controls how the browser loads audio:
+
+auto – load immediately
+
+metadata – load basic info
+
+none – wait until user presses play
+
+Example
+<audio controls loop preload="metadata">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+The <video> Tag – The Visual Container :
+
+The <video> tag acts like a specialized visual container inside the webpage.
+
+Key Attributes
+
+poster
+Displays a preview image before the video plays
+(similar to a YouTube thumbnail).
+
+muted
+Required for autoplay in most modern browsers
+to avoid disturbing users.
+
+playsinline
+Keeps the video inside the webpage on mobile devices
+instead of forcing full-screen mode.
+
+Example
+<video controls muted playsinline poster="thumbnail.jpg" width="400">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+Key Learning Takeaway :
+
+HTML is not just about structure —
+it’s about experience.
+
+Using <audio> and <video> allows developers to:
+
+Enhance accessibility
+
+Improve storytelling
+
+Build modern, user-friendly web applications
