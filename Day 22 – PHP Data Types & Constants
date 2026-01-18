@@ -1,0 +1,25 @@
+Day 22 – PHP Data Types & Constants
+🔹 What I Learned
+
+Data types define how data behaves, and constants protect fixed values.
+
+🔹 Common PHP Data Types
+$name = "Chinna";    // String
+$age = 21;           // Integer
+$price = 99.99;      // Float
+$isAdmin = false;    // Boolean
+
+🔹 Arrays
+$roles = ["admin", "user", "guest"];
+
+🔹 Constants
+define("SITE_NAME", "SecureApp");
+define("MAX_LOGIN_ATTEMPTS", 5);
+
+🔹 Security Perspective
+
+Wrong data types can cause logic flaws
+
+Constants help enforce security rules
+
+Never hardcode secrets in code
