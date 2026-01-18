@@ -1,0 +1,32 @@
+Day 19 – HTML Forms & Web Security
+🔹 What I Learned
+
+HTML forms are the primary interface between users and servers and also the first attack surface of web applications.
+
+🔹 Key Concepts
+
+<form> – Data submission
+
+<input> – User input fields
+
+<textarea> – Long user inputs
+
+<select> & <option> – Dropdown menus
+
+🔹 Security Perspective
+
+HTML forms are commonly exploited through:
+
+SQL Injection
+
+Cross-Site Scripting (XSS)
+
+CSRF
+
+Credential harvesting
+
+Parameter tampering
+
+🔹 Key Takeaway
+
+Understanding forms is essential to understanding how web attacks begin.
