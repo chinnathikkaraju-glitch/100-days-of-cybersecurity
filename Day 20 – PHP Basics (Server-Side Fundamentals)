@@ -1,0 +1,28 @@
+Day 20 – PHP Basics (Server-Side Fundamentals)
+🔹 What I Learned
+
+PHP is a server-side scripting language responsible for:
+
+Processing user input
+
+Handling authentication
+
+Communicating with databases
+
+Enforcing access control
+
+🔹 Core Concepts
+
+PHP syntax & execution
+
+Variables
+
+Conditional logic (if / else)
+
+Form handling ($_GET, $_POST)
+
+Sessions
+
+🔹 Security Perspective
+
+Most web vulnerabilities exist in backend logic, not frontend UI.
