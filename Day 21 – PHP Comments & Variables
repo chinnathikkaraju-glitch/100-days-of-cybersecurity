@@ -1,0 +1,25 @@
+Day 21 – PHP Comments & Variables
+🔹 What I Learned
+
+Clean and well-structured code is the foundation of secure backend development.
+
+🔹 PHP Comments
+// Single-line comment
+# Another single-line comment
+
+/*
+  Multi-line comment
+*/
+
+🔹 PHP Variables
+$username = "admin";
+$age = 21;
+$isLoggedIn = true;
+
+🔹 Security Notes
+
+Never store sensitive data in comments
+
+Variables control authentication and authorization
+
+User input stored in variables must be validated
