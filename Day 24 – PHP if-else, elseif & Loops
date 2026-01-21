@@ -1,0 +1,46 @@
+Day 24 – PHP if-else, elseif & Loops
+What I Learned :
+
+On Day 24, I learned how PHP control structures make applications intelligent by controlling decision-making and repetition.
+
+These concepts form the backbone of:
+
+1.Authentication
+2.Authorization
+3.Input validation
+
+ if-else & elseif (Decision Logic) :
+* Example :
+<?php
+$role = "user";
+if ($role === "admin") {
+    echo "Full Access";
+} elseif ($role === "user") {
+    echo "Limited Access";
+} else {
+    echo "Access Denied";
+}
+?>
+
+ Loops (Repeating Logic Safely) :
+ for Loop Example :
+<?php
+for ($i = 1; $i <= 3; $i++) {
+    echo "Login attempt " . $i . "<br>";
+}
+?>
+
+Security Notes :
+Poor logic leads to broken authentication
+Always limit loop iterations
+Avoid user-controlled infinite loops
+Use strict comparisons (===)
+
+ Key Takeaway :
+if-else controls access.
+Loops control repetition.
+Secure logic protects applications.
+
+Learning Philosophy :
+
+Think like an attacker. Build like a defender.
