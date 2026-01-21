@@ -1,0 +1,47 @@
+Day 23 – PHP Strings & Operators
+ What I Learned :
+On Day 23, I learned how PHP strings and operators work together to process data and make decisions on the server side.
+These concepts are critical because most user input and security logic depend on them.
+ 
+PHP Strings :
+
+Strings are used to handle:
+Usernames
+Passwords
+Messages
+URLs
+
+ Basic Example :
+<?php
+$name = "Chinna";
+echo "Welcome " . $name;
+?>
+
+ PHP Operators :
+Operators control logic and comparisons.
+
+ Common Operators :
+Arithmetic: + - * /
+Comparison: == != >= <= ===
+Logical: && || !
+
+ Example :
+<?php
+$age = 20;
+
+if ($age >= 18) {
+    echo "Access Allowed";
+} else {
+    echo "Access Denied";
+}
+?>
+
+Security Notes :
+
+Strings are common targets for injection attacks
+Use strict comparison (===)
+Always validate and sanitize string input
+
+ Key Takeaway :
+
+Strings carry data,Operators decide trust.
