@@ -1,0 +1,33 @@
+Day 26 – phpMyAdmin Dashboard (localhost)
+ What is phpMyAdmin?
+
+phpMyAdmin is a web-based interface used to manage MySQL databases.
+
+Accessed via:
+http://localhost/phpmyadmin
+ 
+Dashboard Features Explored :
+Database list & overview
+Table structure view
+SQL query execution tab
+User accounts & privileges
+Server information panel
+
+Why phpMyAdmin Matters in Cybersecurity :
+Misconfigured dashboards can expose databases
+Attackers often target open phpMyAdmin panels
+Understanding admin tools helps defend systems
+
+ Security Best Practices Learned :
+Restrict phpMyAdmin to localhost
+Use strong database passwords
+Apply least-privilege access
+Never expose database dashboards publicly
+
+ Key Takeaways
+
+SQL is powerful.
+phpMyAdmin makes it easy.
+Security makes it safe.
+
+Understanding how data is created, stored, and managed is essential for building secure web applications.
