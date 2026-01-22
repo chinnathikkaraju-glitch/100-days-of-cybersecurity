@@ -1,0 +1,35 @@
+ Day 25 – Basics of SQL
+ What is SQL?
+
+SQL (Structured Query Language) is used to:
+Create databases
+Store and retrieve data
+Manage application backends
+SQL is the backbone of most web applications.
+
+ Topics Covered :
+Creating databases
+Viewing available databases
+Selecting a database
+Understanding SQL execution flow
+
+ Basic SQL Commands Learned
+-- Create a database
+CREATE DATABASE cyber_db;
+
+-- Show all databases
+SHOW DATABASES;
+
+-- Use a database
+USE cyber_db;
+Secure Practice :
+CREATE DATABASE IF NOT EXISTS cyber_db;
+
+✔ Prevents duplicate errors
+✔ Safe execution practice
+
+ Cybersecurity Insight (Day 25)
+Databases store sensitive user data
+Poor SQL practices can lead to SQL Injection
+
+Secure database design is the first defense layer
